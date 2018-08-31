@@ -29,7 +29,7 @@
     'depends': [
         'account',
         'partner_default_sale_commission',
-        'service_type',
+        'product_service_type',
         'sale_commission',
     ],
     'data': [

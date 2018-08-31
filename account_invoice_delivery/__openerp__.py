@@ -28,7 +28,7 @@
     'depends': [
         'account_journal_advance',
         'delivery',
-        'service_type',
+        'product_service_type',
         'sale_advance_invoice_progress',
     ],
     'data': [

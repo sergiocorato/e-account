@@ -29,7 +29,7 @@
         'discount_complex',
         'partner_default_sale_discount',
         'product_category_nodiscount',
-        'service_type',
+        'product_service_type',
     ],
     'data': [
     ],
