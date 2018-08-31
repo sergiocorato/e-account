@@ -21,7 +21,7 @@
 #
 {
     'name': 'Partner button view account moves',
-    'version': '10.0.1.0.0',
+    'version': '9.0.1.0.0',
     'category': 'Accounting & Finance',
     'author': 'Alexis de Lattre - Akretion; Sergio Corato',
     'description': 'With this module partner will have button with '
