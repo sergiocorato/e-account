@@ -19,7 +19,7 @@
 {
     'name': 'Account invoice report Py3o',
     'version': '10.0.1.0.0',
-    'category': 'other',
+    'category': 'Accounting',
     'author': 'Sergio Corato - Efatto.it',
     'website': 'https://efatto.it',
     'description': 'Invoice report',
@@ -31,5 +31,5 @@
     'data': [
         'data/reports.xml',
     ],
-    'installable': False
+    'installable': True,
 }
