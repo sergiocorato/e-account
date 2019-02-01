@@ -285,3 +285,27 @@ class AccountTaxCode(orm.Model):
     _columns = {
         'sum_date': fields.function(_sum_date, string="Period Sum"),
     }
+
+
+class AccountTax(orm.Model):
+    _inherit = 'account.tax'
+
+    def _get_vat_account(self):
+        for tax in self:
+            if tax.tax_code_id.vat_statement_account_id:
+                tax.vat_statement_account_id = tax.tax_code_id.\
+                    vat_statement_account_id
+            elif tax.tax_code_id.parent_id.vat_statement_account_id:
+                tax.vat_statement_account_id = tax.tax_code_id.parent_id.\
+                    vat_statement_account_id
+            elif tax.account_collected_id:
+                tax.vat_statement_account_id = tax.account_collected_id
+
+    vat_statement_account_id = fields.Many2one(
+        'account.account',
+        "Account used for VAT statement",
+        compute=_get_vat_account,
+        help="The tax balance will be "
+             "associated to this account after selecting the period in "
+             "VAT statement"
+    )
