@@ -5,7 +5,7 @@
         <record id="view_account_analytic_account_tree_c2c_3_usability" model="ir.ui.view">
             <field name="name">account.analytic.account.list.contract.usability</field>
             <field name="model">account.analytic.account</field>
-            <field name="inherit_id" ref="account_analytic_analysis.view_account_analytic_account_tree_c2c_3"/>
+            <field name="inherit_id" ref="contract.view_account_analytic_account_tree_c2c_3"/>
             <field name="arch" type="xml">
                 <field name="complete_name" position="replace">
                     <field name="name"/>
@@ -22,7 +22,7 @@
         <record id="account_analytic_account_form_form_usability" model="ir.ui.view">
             <field name="name">account.analytic.account.invoice.form.usability</field>
             <field name="model">account.analytic.account</field>
-            <field name="inherit_id" ref="account_analytic_analysis.account_analytic_account_form_form"/>
+            <field name="inherit_id" ref="contract.account_analytic_account_form_form"/>
             <field name="arch" type="xml">
                 <field name="fix_price_to_invoice" position="replace"/>
                 <field name="toinvoice_total" position="replace"/>

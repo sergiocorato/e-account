@@ -27,7 +27,7 @@
     'author': 'Sergio Corato',
     'website': 'http://www.efatto.it',
     'depends': [
-        'account_analytic_analysis',
+        'contract',
         'account_analytic_sal',
     ],
     'data': [
